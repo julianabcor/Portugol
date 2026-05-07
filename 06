@@ -1,0 +1,25 @@
+programa {
+  funcao inicio() {
+    real nota1, nota2, nota3, soma, media
+    escreva("Digite a primeira nota: ")
+    leia(nota1)
+    escreva("Digite a segunda nota: ")
+    leia(nota2)
+    escreva("Digite a terceira nota: ")
+    leia(nota3)
+
+    soma = nota1 + nota2 + nota3
+    media = soma / 3
+    escreva("\nA média das suas notas foi: ", media)
+    
+    se (media>=6 e media <=10)
+    escreva("\nParabens! Você foi aprovado.")
+
+    senao se(media<6 e media>=0)
+    escreva("\nVocê foi reprovado.")
+
+    senao 
+    escreva("\nMédia inválida.")
+
+  }
+}
